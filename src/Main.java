@@ -1,5 +1,8 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+    var trail = new GDCOfStrings();
+    var result = trail.gcdOfStrings("abc","abc");
+        System.out.println(result);
+
     }
 }
