@@ -6,7 +6,5 @@ public class Main {
         var result = PlaceFlowers.canPlaceFlowers(a,1);
         System.out.println(result);
 
-
-
     }
 }
