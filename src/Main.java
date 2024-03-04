@@ -1,8 +1,12 @@
+
+
 public class Main {
     public static void main(String[] args) {
-    var trail = new GDCOfStrings();
-    var result = trail.gcdOfStrings("abc","abc");
+        int[] a = {0};
+        var result = PlaceFlowers.canPlaceFlowers(a,1);
         System.out.println(result);
+
+
 
     }
 }
