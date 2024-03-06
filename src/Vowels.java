@@ -1,30 +1,35 @@
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+import java.util.List;
+
 public class Vowels {
     public String reverseVowels(String s) {
-        char[] word = s.toCharArray();
-        int start = 0;
-        int end = s.length() - 1;
-        String vowels = "aeiouAEIOU";
 
-        while (start < end) {
-            while (start < end && vowels.indexOf(word[start]) == -1) {
-                start++;
-            }
+        int length = s.length();
 
-            while (start < end && vowels.indexOf(word[end]) == -1) {
-                end--;
-            }
-
-            char temp = word[start];
-            word[start] = word[end];
-            word[end] = temp;
-
-
-            start++;
-            end--;
+        for(int i = 0; i < length ; i++){
+            result.append(s.charAt(i));
         }
 
-        String answer = new String(word);
-        return answer;
+
+        int n = 0,vowel = 0;
+        for(int i = 0; i < length; i++){
+
+            if(checkVowel(result.charAt(i)) && n == 0){
+                vowel = i;
+                n = 1;
+            }
+
+            if(checkVowel(s.charAt(i)) && n == 1) {
+
+            }
+        }
+
     }
+
+    private boolean checkVowel(char ch) {
+        return ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u';
+    }
+
 
 }
