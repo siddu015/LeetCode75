@@ -2,8 +2,7 @@
 
 public class MergeAlternatively {
     public static String merge(String word1, String word2) {
-        word1.toLowerCase();
-        word2.toLowerCase();
+
         StringBuilder result = new StringBuilder();
         int length1 = Math.min(word1.length(), word2.length());
         int length2 = Math.max(word1.length(), word2.length());

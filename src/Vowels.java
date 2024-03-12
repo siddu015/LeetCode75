@@ -1,32 +1,31 @@
 
 public class Vowels {
-//    public String reverseVowels(String s) {
-//
-//        int length = s.length();
-//
-//        for(int i = 0; i < length ; i++){
-//            result.append(s.charAt(i));
-//        }
-//
-//
-//        int n = 0,vowel = 0;
-//        for(int i = 0; i < length; i++){
-//
-//            if(checkVowel(result.charAt(i)) && n == 0){
-//                vowel = i;
-//                n = 1;
-//            }
-//
-//            if(checkVowel(s.charAt(i)) && n == 1) {
-//
-//            }
-//        }
-//
-//    }
+    public String reverseVowels(String s) {
+        char[] word = s.toCharArray();
+        int start = 0, end = s.length() - 1;
+
+        while(start < end) {
+            while (start < end && !checkVowel(word[start])) {
+                start++;
+            }
+
+            while (start < end && !checkVowel(word[end])) {
+                end--;
+            }
+
+            char ch = word[start];
+            word[start] = word[end];
+            word[end] = ch;
+
+            start++;
+            end--;
+        }
+
+        return new String(word);
+    }
 
     private boolean checkVowel(char ch) {
         return ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u';
     }
-
 
 }
