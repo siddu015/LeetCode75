@@ -2,9 +2,9 @@
 public class Main {
     public static void main(String[] args) {
 
-       var ex = new StringCompression();
-        char [] arr = {'a','b','b','b','b','b','b','b','b','b','b','b'};
-//        System.out.println(ex.compress(arr));
-        ex.compress(arr);
+       var ex = new MaxNumberOfKSumPairs();
+        int [] arr = {1,2,3,4};
+        System.out.println(ex.maxOperations(arr,5));
+
     }
 }
