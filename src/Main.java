@@ -2,9 +2,10 @@
 public class Main {
     public static void main(String[] args) {
 
-       var ex = new FindTheHighestAltitude();
-        int [] arr = {44,32,-9,52,23,-50,50,33,-84,47,-14,84,36,-62,37,81,-36,-85,-39,67,-63,64,-47,95,91,-40,65,67,92,-28,97,100,81};
-        System.out.println(ex.largestAltitude(arr));
+       var ex = new DifferenceOfTwoArrays();
+        int [] nums1 = {1,2,3,3};
+        int [] nums2 = {1,1,2,2};
+        System.out.println(ex.findDifference(nums1, nums2));
 
     }
 }
