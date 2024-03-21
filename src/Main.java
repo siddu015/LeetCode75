@@ -2,10 +2,9 @@
 public class Main {
     public static void main(String[] args) {
 
-       var ex = new MaximumNumberOfVowelsInASubstringOfGivenLength();
-        int [] arr = {1,2,3,4};
-        String s = "leetcode";
-        System.out.println(ex.maxVowels(s,3));
+       var ex = new MaxConsecutiveOnes();
+        int [] arr = {0,0,1,1,0,0,1,1,1,0,1,1,0,0,0,1,1,1,1};
+        System.out.println(ex.longestOnes(arr, 3));
 
     }
 }
