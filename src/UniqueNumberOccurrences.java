@@ -11,6 +11,7 @@ public class UniqueNumberOccurrences {
 
         Set<Integer> uniqueCounts = new HashSet<>(occurrenceMap.values());
 
+
         return uniqueCounts.size() == occurrenceMap.size();
 
     }
