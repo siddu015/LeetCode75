@@ -9,6 +9,7 @@ public class UniqueNumberOccurrences {
             occurrenceMap.put(num, occurrenceMap.getOrDefault(num, 0) + 1);
         }
 
+
         Set<Integer> uniqueCounts = new HashSet<>(occurrenceMap.values());
 
 
